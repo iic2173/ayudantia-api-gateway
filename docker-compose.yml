@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - 3001:3001
+    environment:
+      - .env
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - backend
+
+networks:
+  backend:
