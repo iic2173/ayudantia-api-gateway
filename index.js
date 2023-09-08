@@ -4,7 +4,8 @@ const Router = require('koa-router');
 const cors = require('@koa/cors');
 
 const corsOptions = {
-  origin: '*'
+  origin: '*',
+  allowHeaders: ['*', 'Auth'],
 };
 
 const app = new Koa();
