@@ -5,7 +5,7 @@ const cors = require('@koa/cors');
 
 const corsOptions = {
   origin: '*',
-  allowHeaders: ['*', 'Auth'],
+  allowHeaders: ['Auth'],
 };
 
 const app = new Koa();
