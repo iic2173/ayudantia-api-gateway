@@ -39,4 +39,4 @@ app
   .use(router.allowedMethods());
 
 console.log('Listening port 3001');
-app.listen(3001);
+app.listen(3001, '0.0.0.0');
